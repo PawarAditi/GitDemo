@@ -10,7 +10,7 @@ const path = require('path')
 app.get('/', (req, res)=>{
     res.sendFile(__dirname + '/public/html.html')
 })
-
+var a ="";
 var name = "";
 
 io.on('connection', (socket) => {
