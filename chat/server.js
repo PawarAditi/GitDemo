@@ -1,6 +1,6 @@
 const express = require('express')
 const http = require('http')
-const port = 3012
+const port = process.env.PORT || 3012
 const app = express()
 const server = http.createServer(app)
 const io = require('socket.io')(server)
