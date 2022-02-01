@@ -1,6 +1,6 @@
 const express = require('express')
 const http = require('http')
-const port = process.env.PORT || 3012
+const port = 3012
 const app = express()
 const server = http.createServer(app)
 const io = require('socket.io')(server)
@@ -10,7 +10,7 @@ const path = require('path')
 app.get('/', (req, res)=>{
     res.sendFile(__dirname + '/public/html.html')
 })
-var a ="";
+
 var name = "";
 
 io.on('connection', (socket) => {
